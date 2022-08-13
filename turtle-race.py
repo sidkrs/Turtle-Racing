@@ -60,11 +60,13 @@ while cont:
             if racer.xcor() > 400:
                 end = False
             racer.hideturtle()
-
-    option = screen.textinput(title="End Game", prompt="Do you want to keep playing? 'yes' or 'no'?: ")
+    
     if money <= 0:
         cont = False
         print(f"You have no money left. Balance: ${money}")
+
+    option = screen.textinput(title="End Game", prompt="Do you want to keep playing? 'yes' or 'no'?: ")
+    
     if option == 'no':
         cont = False
         print("Goodbye.")
