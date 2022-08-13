@@ -64,7 +64,8 @@ while cont:
     if money <= 0:
         cont = False
         print(f"You have no money left. Balance: ${money}")
-
+    
+    #Choice to keep playing or not
     option = screen.textinput(title="End Game", prompt="Do you want to keep playing? 'yes' or 'no'?: ")
     
     if option == 'no':
