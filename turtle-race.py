@@ -48,7 +48,7 @@ while cont:
                     print(f"You lose. The {winner} turtle won the race.")
                     money -= amount
                     print(f"You have ${money}")
-            #each turtle will take a random from 0 to 10 units
+            #each turtle will take a random step from 0 to 10 units
             step = random.randint(0,10)
             racer.forward(step)
 
